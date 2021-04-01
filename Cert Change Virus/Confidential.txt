@@ -1,0 +1,13 @@
+-> The attcker setup : 
+Attacker has cert9.db file in the "test" folder and folder is shared to everyone in network. 
+Sets up burpsuite to listen to all interface and set up port to your choice on which no services is running. e.g. 8585
+Copy the code to any batch file.
+Convert that batch file to exe using any batch to exe converter tool.
+Then change the icon of the something promising using any icon changer tool. 
+Then send it to the client. 
+
+-> The Client :  
+The client executes the exe file.
+
+-> The Process after Execution of exe file :
+Exe file will replace the CA certificate file and change IP and PORT to attackers choosen.  
