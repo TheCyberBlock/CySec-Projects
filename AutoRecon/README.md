@@ -21,3 +21,4 @@ Requirements
 -------------
 - Linux OS (Debian Based)
 - Nmap ( type `sudo apt install nmap` to install Nmap )
+- Git
