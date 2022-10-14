@@ -1,4 +1,4 @@
-AutoRecon Script
+Auto_PortScan Script
 ===========
 
 Script to automatically discover open ports and run detailed Nmap scans on those specific ports
@@ -12,9 +12,9 @@ This script is not a finished tool. I am still working on it to make it fully au
 Usage
 -------------
 - Open a terminal, type `git clone https://github.com/TheCyberBlock/CySec-Projects.git` and press enter
-- Go to `AutoRecon` folder by typing `cd AutoRecon`
-- Type `chmod +x AutoRecon.sh` in terminal
-- Run the script with `./AutoRecon.sh <IP>` replace the `<IP>` with IP you want to scan
+- Go to `Auto_PortScan` folder by typing `cd AutoRecon`
+- Type `chmod +x Auto_PortScan.sh` in terminal
+- Run the script with `./Auto_PortScan.sh <IP>` replace the `<IP>` with IP you want to scan
 
 
 Requirements
