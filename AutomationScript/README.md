@@ -1,5 +1,5 @@
 # Automation Script
-> m3rlin | Oct 14, 2022
+> m3rlin | Oct 03, 2024
 
 ## Purpose
 Purpose of this project is to automate recon part of the pentesting according to my need. You can tweak the script as you see fit!
@@ -10,7 +10,7 @@ To see how to use this script, simply run the script without any arguments and y
 
 
 ## Note
-If don't know how to run .sh scripts, this might not be the right project for you!
+If don't know how to run .sh scripts or read bash scripts, it would be advised to not run this or any other file you find on the internet.
 
 
 ### Thank you
