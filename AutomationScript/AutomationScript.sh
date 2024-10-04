@@ -75,7 +75,7 @@ if [ $# -eq 0 ]
   	then
     		echo -e "$BRed No arguments supplied.......!!!\n"
 		echo -e "$BGreen Usage: <script_name> output_directory website_url"
-		echo -e "$White Example: ./AutomationScript.sh Test http://test.com"
+		echo -e "$White Example: ./AutomationScript.sh /tmp/Test http://test.com"
 		exit 1
 fi
 
@@ -83,6 +83,15 @@ fi
 # Making and Chaning Directory for Storing Output
 mkdir $DirectoryName && cd $DirectoryName
 
+
+# Installing Tools
+Check_Tools () {
+	printf "$BYellow==================================================================================\n"
+	printf "				Installing Tools					  	\n"
+	printf "==================================================================================$NC\n"
+	sudo apt install host dnsrecon sslscan python3 python3-pip
+	pip3 install shcheck --break-system-packages
+}
 
 # Passive Info
 Passive_Info () {
@@ -121,8 +130,9 @@ Check_Security_Headers () {
 	cat Missing_Security_Headers | grep --color "Missing"
 }
 
-
 # Calling the Function
+Check_Tools
+printf "\n\n\n"
 Passive_Info
 printf "\n\n\n"
 Check_DNS
